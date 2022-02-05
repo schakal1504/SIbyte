@@ -14,3 +14,5 @@ Soluciones Inteligentes
 lexcon
 control interno
 Flamingo
+
+primera linea en git
