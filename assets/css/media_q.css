@@ -1,0 +1,46 @@
+/*--------------------------------------------------------------
+# Responsive Media Queries
+--------------------------------------------------------------*/
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 992px) {
+
+}
+
+@media (max-width: 580px) {
+	.img_sibyte {
+		width: 90%;
+	}
+}
+
+@media (min-width: 1024px) {
+
+}
+
+@media (max-width: 768px) {
+	.main-banner .right-image img{
+		margin-top: 0%;
+	}
+	.img_top {
+		width: 20%;
+	}
+}
+
+@media (min-max: 1150px) {
+
+}
+
+@media (min-width: 1200px) {
+	.d_crece{
+		margin-left: 25%;
+	}
+	.main-banner .right-image img{
+		margin-top: 40%;
+	}
+	.img_top {
+		width: 15%;
+	}
+}
+

@@ -134,6 +134,21 @@ img {
   overflow: hidden;
 }
 
+.img_top{
+  width: 10%;
+  padding-top: 2%;
+  position: fixed;
+}
+
+#img_modal_icon{
+  margin-left: 45%;
+  width: 10%;
+  border-radius: 10%;
+}
+
+.d_crece{
+  margin-left: 5%;
+}
 /* 
 ---------------------------------------------
 global styles
@@ -922,7 +937,8 @@ Banner Style
 }
 
 .main-banner .right-image img {
-  max-width: 590px;
+  max-width: 593px;
+  margin-top: 35%;
 }
 
 
