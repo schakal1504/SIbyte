@@ -1,15 +1,45 @@
-Gestion y analisis de la informacion
-Reingeniria de procesos
-Controlaria Interna
-plataformas digitales
-Control y rotacion de inventarios
-Desarrollo aplicaciones web Movil
-Soporte y productos (instalacion de redes y camaras)
-Asesoria Contable fiscal
-Flamingo
+Asesoría en control interno
+	Gestión de la Información 
+	Reingeniería de procesos
+	Controlaría Interna
+	Control y rotación de inventarios
+	Punto de equilibrio
+	Elaboración de manuales de operación y funciones
+	Automatización de reportes (Excel)
+Asesoría Contable fiscal
+	Revisiones a los controles de los procesos financieros
+	Asesoría Fiscal y control de obligaciones
+	Presentación de declaraciones de impuestos
+	Presentación de declaraciones informativas
+      	Firma electrónica, facturas digitales y nóminas digitales. 
+ 	Atención a cartas de invitación del SAT.
+      	Altas, bajas o modificaciones ante el IMSS. 
+	
+Plataformas Digitales
+	Asesoría en plataformas de ventas (Amazon y Mercado libre)
+	Creación de reportes de utilidades
+	Asesoría en surtimiento de stock
+	Control financiero/contable ante SAT y plataformas
 
-SIbyte
-Soluciones Inteligentes 
+Desarrollo aplicaciones 
+	Diseño y programación de páginas web y/o tienda online
+	Administración de sitios web (WordPress)
+	Creación de aplicaciones móviles (IOS y Android)
+	Programas personalizados a la medida
+
+TIC’s
+	Instalación de cámaras CCTV
+	Infraestructura de red
+	Reparación y mantenimiento de equipo de cómputo e impresoras
+	Digitalización de control de horario 
+	Administración de servidores
+
+Productos
+	Equipos y accesorios de cómputo,
+	impresoras, consumibles para impresoras (originales y genéricos)
+	y más variedad solicita una cotización
+	
+
 
 lexcon
 control interno
