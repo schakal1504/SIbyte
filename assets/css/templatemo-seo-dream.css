@@ -990,6 +990,11 @@ Features Style
   background-color: rgba(255,255,255,0.3);
 }
 
+.icon{
+  text-align: justify;
+  margin-left: 5%;
+}
+
 .first-feature:hover .icon {
   background-image: url(../images/diagnostico2.png);
 }
