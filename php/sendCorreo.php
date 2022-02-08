@@ -5,10 +5,10 @@
 	$correo_u  = $k[1];
 	$mensaje   = $k[2];
 
-	$paracorreo = $correo_u;
+	$tucorreo = $correo_u;
 	$titulo = $tipo;
 	$mensaje = $mensaje;
-	$tucorreo = "contacto@sibyte.mx";
+	$paracorreo = "contacto@sibyte.mx";
 
 	if(mail($paracorreo, $titulo, $mensaje, $tucorreo))	
 	{

@@ -1,6 +1,6 @@
 <?php 
 
-$paracorreo = "miguelin2491@gmail.com";
+$paracorreo = "contacto@sibyte.mx";
 $titulo = "Test";
 $mensaje = "Hola";
 $tucorreo = "contacto@sibyte.mx";
