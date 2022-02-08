@@ -33,9 +33,8 @@ $(document).ready(function () {
 		$("#descripcion_m").empty();
 	  	$(".modal-title").text('');
 		$(".modal-title").text('Productos');
-		$(".modal-title").text('Desarrollo de Aplicaciones');
-		$("#descripcion_m").append("<p>Equipos y accesorios de cómputo,</p>"+
-					"<p>impresoras, consumibles para impresoras (originales y genéricos)</p>"+
+		$("#descripcion_m").append("<p>Equipos y accesorios de cómputo, impresoras,</p>"+
+					"<p>consumibles para impresoras (originales y genéricos)</p>"+
 					"<p>y más variedad solicita una cotización</p>");
 		$("#tipo_modal").val("Productos");
 	  	$("#myModal").modal('show');
