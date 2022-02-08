@@ -1,16 +1,16 @@
 <?php 
-	
-	if(isset($_POST['subject']) && !empty($_POST['subject']) && isset($_POST['message']) && !empty($_POST['message']))
-	{
-		$destino = "contacto@sibyte.mx";
-		$desde = "From:". "SiByte";
-		$asunto = $_POST['subject'];
-		$mensaje = $_POST['message'];
-		mail($destino, $asunto, $mensaje, $desde);
-		echo "Correo Enviado";
-	}
-	else
-	{
-		echo "Problemas al enviar";
-	}
+
+$paracorreo = "miguelin2491@gmail.com";
+$titulo = "Test";
+$mensaje = "Hola";
+$tucorreo = "contacto@sibyte.mx";
+
+if(mail($paracorreo, $titulo, $mensaje, $tucorreo))	
+{
+	echo "Correo Enviado";
+}
+else
+{
+	echo "Error";
+}
 ?>

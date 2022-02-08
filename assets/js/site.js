@@ -13,7 +13,7 @@ $(document).ready(function () {
 							"<p>Creación de reportes de utilidades</p>"+
 							"<p>Asesoría en surtimiento de stock</p>"+
 							"<p>Control financiero/contable ante SAT y plataformas</p>");
-		$("#tipo_modal").val("PLDI");
+		$("#tipo_modal").val("Plataformas Dígitales");
 	  	$("#myModal").modal('show');
 	});
 
@@ -25,7 +25,7 @@ $(document).ready(function () {
 									"<p>Administración de sitios web (WordPress)</p>"+
 									"<p>Creación de aplicaciones móviles (IOS y Android)</p>"+
 									"<p>Programas personalizados a la medida</p>");
-		$("#tipo_modal").val("dapp");
+		$("#tipo_modal").val("Desarrollo de Aplicaciones");
 	  	$("#myModal").modal('show');
 	});
 
@@ -37,7 +37,7 @@ $(document).ready(function () {
 		$("#descripcion_m").append("<p>Equipos y accesorios de cómputo,</p>"+
 					"<p>impresoras, consumibles para impresoras (originales y genéricos)</p>"+
 					"<p>y más variedad solicita una cotización</p>");
-		$("#tipo_modal").val("prod");
+		$("#tipo_modal").val("Productos");
 	  	$("#myModal").modal('show');
 	});
 
@@ -50,7 +50,7 @@ $(document).ready(function () {
 				"<p>Reparación y mantenimiento de equipo de cómputo e impresoras</p>"+
 				"<p>Digitalización de control de horario</p>"+ 
 				"<p>Administración de servidores</p>");
-		$("#tipo_modal").val("tics");
+		$("#tipo_modal").val("TIC'S");
 	  	$("#myModal").modal('show');
 	});
 
@@ -59,8 +59,15 @@ $(document).ready(function () {
 		var correo_u = $("#correo_usuario").val();
 		var mensaje = $("#mensaje").val();
 		//Aqui ira el Ajax a phpMailer.php
-		alert("Enviado Correctamente"+ tipo);
 		$("#myModal").modal('hide');
+		t3=tipo+","+correo_u+","+mensaje+","+new Date().getTime();
+	    $.post("php/sendCorreo.php",{datos:t3, a:"A1D6B6D7"},function(respuesta){
+	    	console.log(respuesta);
+	    	if(respuesta == "Correo Enviado")
+	    		alert("Enviado Correctamente");
+	    	else
+	    		alert("Ocurrio un error");
+	    });
 
 	});
 });
@@ -76,7 +83,7 @@ $( ".div_ci" ).click(function() {
 			"<p>Punto de equilibrio</p>"+
 			"<p>Elaboración de manuales de operación y funciones</p>"+
 			"<p>Automatización de reportes (Excel)</p>");
-		$("#tipo_modal").val("CI");
+		$("#tipo_modal").val("Control Interno");
 	  	$("#myModal").modal('show');
 	});
 
@@ -91,6 +98,6 @@ $( ".div_ci" ).click(function() {
 				      	"<p>Firma electrónica, facturas digitales y nóminas digitales</p>"+ 
 				 		"<p>Atención a cartas de invitación del SAT</p>"+
 				      	"<p>Altas, bajas o modificaciones ante el IMSS</p>");
-		$("#tipo_modal").val("CO");
+		$("#tipo_modal").val("Contabilidad e Impuestos");
 	  	$("#myModal").modal('show');
 	});
