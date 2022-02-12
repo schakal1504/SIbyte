@@ -1,16 +1,18 @@
 <?php 
 
 $paracorreo = "contacto@sibyte.mx";
-$titulo = "Test";
-$mensaje = "Hola";
+$titulo = $_POST['subject']."-".$_POST['email'];
+$mensaje = $_POST['name']." ".$_POST['surname'].":".$_POST['message'];
 $tucorreo = "contacto@sibyte.mx";
-
+$resultado = "";
 if(mail($paracorreo, $titulo, $mensaje, $tucorreo))	
 {
-	echo "Correo Enviado";
+	$resultado = "Enviado";
 }
 else
 {
-	echo "Error";
+	$resultado = "Error";
 }
+	print_r($resultado)
+
 ?>
