@@ -1564,7 +1564,7 @@ contact
   max-width: 32px;
 }
 
-form#contact {
+form#contact,div#contact {
   position: relative;
   background-color: #fff;
   padding: 60px 80px;
@@ -1572,7 +1572,7 @@ form#contact {
   text-align: center;
 }
 
-form#contact input {
+form#contact input, div#contact input {
   width: 100%;
   height: 46px;
   border-radius: 5px;
@@ -1586,11 +1586,11 @@ form#contact input {
   margin-bottom: 20px;
 }
 
-form#contact input::placeholder {
+form#contact input::placeholder, div#contact input::placeholder {
   color: #aaa;
 }
 
-form#contact textarea {
+form#contact textarea, div#contact textarea {
   width: 100%;
   min-width: 100%;
   max-width: 100%;
@@ -1608,11 +1608,11 @@ form#contact textarea {
   margin-bottom: 20px;
 }
 
-form#contact textarea::placeholder {
+form#contact textarea::placeholder, div#contact textarea::placeholder {
   color: #aaa;
 }
 
-form#contact button {
+form#contact button, div#contact button {
   display: inline-block;
   background-color: #33ccc5;
   font-size: 15px;
@@ -1629,7 +1629,7 @@ form#contact button {
   border: none;
 }
 
-form#contact button:hover {
+form#contact button:hover, div#contact button:hover {
   background-color: #4771cb!important;
   color: #fff!important;
   border-bottom: 2px solid #33ccc5!important;

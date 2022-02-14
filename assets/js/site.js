@@ -100,3 +100,20 @@ $( ".div_ci" ).click(function() {
 		$("#tipo_modal").val("Contabilidad e Impuestos");
 	  	$("#myModal").modal('show');
 	});
+
+$("#form-submit").click(function() {
+	var nombre = $("#tipo_modal").val();
+	var apellido = $("#app").val();
+	var correo = $("#email").val();
+	var asunto = $("#subject").val();
+	var mensaje = $("#message").val();
+	//Aqui ira el Ajax a php/sendCorreo.php
+	t3=nombre+","+apellido+","+correo+","+asunto+","+mensaje+","+new Date().getTime();
+    $.post("php/phpMailer.php",{datos:t3, a:"A1D6B6D7"},function(respuesta){
+    	console.log(respuesta);
+    	if(respuesta == "Correo Enviado")
+    		alert("Enviado Correctamente");
+    	else
+    		alert("Ocurrio un error");
+    });
+});
