@@ -6,11 +6,12 @@
 	$mensaje   = $k[2];
 
 	$paracorreo = "contacto@sibyte.mx";
-	$titulo = $tipo." CC:".$correo_u;
-	$mensaje = $mensaje;
-	$tucorreo = "contacto@sibyte.mx";
+	$titulo = $tipo;
+	$mensaje = $correo_u.":".$mensaje;
+	$from = "contacto@sibyte.mx";
+	$headers = "From:".$from;
 
-	if(mail($paracorreo, $titulo, $mensaje, $tucorreo))	
+	if(mail($paracorreo, $titulo, $mensaje, $headers))	
 	{
 		echo "Correo Enviado";
 	}

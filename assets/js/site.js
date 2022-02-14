@@ -63,9 +63,14 @@ $(document).ready(function () {
 	    $.post("php/sendCorreo.php",{datos:t3, a:"A1D6B6D7"},function(respuesta){
 	    	console.log(respuesta);
 	    	if(respuesta == "Correo Enviado")
+	    	{
 	    		alert("Enviado Correctamente");
-	    	else
+	    		$("#tipo_modal").val("");
+	    		$("#correo_usuario").val("");
+	    		$("#mensaje").val("");
+	    	}else{
 	    		alert("Ocurrio un error");
+	    	}
 	    });
 
 	});
@@ -102,7 +107,7 @@ $( ".div_ci" ).click(function() {
 	});
 
 $("#form-submit").click(function() {
-	var nombre = $("#tipo_modal").val();
+	var nombre = $("#name").val();
 	var apellido = $("#app").val();
 	var correo = $("#email").val();
 	var asunto = $("#subject").val();
@@ -123,7 +128,7 @@ $("#form-submit").click(function() {
 
 function limpiarFormu()
 {
-	$("#tipo_modal").val("");
+	$("#name").val("");
 	$("#app").val("");
 	$("#email").val("");
 	$("#subject").val("");
