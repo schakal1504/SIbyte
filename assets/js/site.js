@@ -111,9 +111,22 @@ $("#form-submit").click(function() {
 	t3=nombre+","+apellido+","+correo+","+asunto+","+mensaje+","+new Date().getTime();
     $.post("php/phpMailer.php",{datos:t3, a:"A1D6B6D7"},function(respuesta){
     	console.log(respuesta);
-    	if(respuesta == "Correo Enviado")
+    	if(respuesta == "Enviado")
+    	{
     		alert("Enviado Correctamente");
-    	else
-    		alert("Ocurrio un error");
+    		limpiarFormu();
+    	}else{
+    		alert("Ocurrio un error al enviar el correo");
+    	}
     });
 });
+
+function limpiarFormu()
+{
+	$("#tipo_modal").val("");
+	$("#app").val("");
+	$("#email").val("");
+	$("#subject").val("");
+	$("#message").val("");
+	location.reload();
+}
